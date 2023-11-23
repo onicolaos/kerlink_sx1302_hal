@@ -786,7 +786,7 @@ int lgw_receive(uint8_t max_pkt, struct lgw_pkt_rx_s *pkt_data) {
     uint8_t  nb_pkt_fetched = 0;
     uint16_t nb_pkt_found = 0;
     uint16_t nb_pkt_left = 0;
-    float current_temperature, rssi_temperature_offset;
+    float rssi_temperature_offset;
 
     /* Check that AGC/ARB firmwares are not corrupted, and update internal counter */
     /* WARNING: this needs to be called regularly by the upper layer */
